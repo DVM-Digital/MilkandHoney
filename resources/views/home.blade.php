@@ -17,39 +17,7 @@
   <link rel="stylesheet" href="{{ asset('css/milk.css') }}">
   <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
-    <style>
-        .block-hero-8 h1,
-        .block-hero-8 h2,
-        .block-hero-8 h3 { font-family: linotype-didot, serif; }
 
-        .block-hero-8 h4,
-        .block-hero-8 h5,
-        .block-hero-8 h6 { font-family: myriad-pro, sans-serif; }
-
-
-        .block-hero-8 .image-text {
-
-            font-size: 44px;
-            font-weight: 900;
-        }
-
-        @media (min-width: 992px) {
-            .block-hero-8 .text-n-right {
-                --offset:  -15%;
-                position: relative;
-                z-index: 9;
-                margin-left: var(--offset);
-                -webkit-transform: translateX(var(--offset));
-                transform: translateX(var(--offset));
-                padding: 25px 30px;
-                background-color: #FFF;
-            }
-            .block-hero-8 .image-text {
-                font-size: 4.8vw;
-            }
-        }
-
-    </style>
 </head>
 
 <body class="stretched">
@@ -73,23 +41,27 @@
             </div>
 
             <div class="header-misc">
-              <a href="#bv-studio" class="bv-cta-btn">Book Consultation</a>
+              <a href="#contact" class="bv-cta-btn">Book Consultation</a>
             </div>
 
             <nav class="primary-menu">
               <ul class="menu-container one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="72">
-                <li class="menu-item"><a class="menu-link" href="#" data-href="#bv-hero">
+                <li class="menu-item"><a class="menu-link" href="#" data-href="#slider">
                     <div>Home</div>
                   </a></li>
-                <li class="menu-item"><a class="menu-link" href="#" data-href="#bv-portfolio">
+                <li class="menu-item"><a class="menu-link" href="#" data-href="#gallery">
                     <div>Gallery</div>
                   </a></li>
-                <li class="menu-item"><a class="menu-link" href="#" data-href="#bv-services">
+                <li class="menu-item"><a class="menu-link" href="#" data-href="#services">
                     <div>Services</div>
                   </a></li>
-                <li class="menu-item"><a class="menu-link" href="#" data-href="#bv-testimonials">
+                <li class="menu-item"><a class="menu-link" href="#" data-href="#reviews">
                     <div>Reviews</div>
                   </a></li>
+                <li class="menu-item"><a class="menu-link" href="#" data-href="#about">
+                    <div>About</div>
+                  </a></li>
+                
               </ul>
             </nav>
 
@@ -99,46 +71,39 @@
       <div class="header-wrap-clone"></div>
     </header>
 
-        <section id="slider" class="slider-element min-vh-80 block-hero-8 py-0" style="background-image:radial-gradient(circle at top right, #efe9e2 0%, #efe9e2 15%,transparent 15%, transparent 100%); background-color: #efe9e2;">
-            <div class="">
 
-                <div class="row align-items-center justify-content-center">
-                    <!-- Image -->
-                    <div class="col-lg-6">
-                        <div id="bs-carousel" class="carousel slide" data-bs-ride="carousel">
-                          <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="1000">
-                              <img class="min-vh-80" src="img/home-slide/1.jpg" alt="Fitness program carousel — daily exercise routine">
+    <section id="slider" class="slider-element">
 
-                            </div>
-                            <div class="carousel-item" data-bs-interval="2000">
-                              <img class="min-vh-80" src="img/home-slide/2.jpg" alt="Fitness program carousel — flexible healthy eating">
+      <div class="row align-items-center">
 
-                            </div>
-                            <div class="carousel-item" data-bs-interval="3000">
-                              <img class="min-vh-80" src="img/home-slide/3.jpg" alt="Fitness program carousel — transformation results">
+        <div class="col-md-6 p-5">
+          <span class="bv-section-tag text-uppercase">Milk & Honey</span>
+          <h3 class="text-stretch display-3 fw-bold position-relative text-uppercase">Food & drink photography</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#bv-studio" class="bv-cta-btn p-3">Book Consultation</a>
+        </div>
 
-                            </div>
-                          </div>
-                        </div>
+        <div class="col-md-6 order-md-2 min-vh-40">
+          <div id="bs-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img class="min-vh-80" src="img/home-slide/1.jpg" alt="Fitness program carousel — daily exercise routine">
 
-                    </div>
-                    <!-- Text -->
-                    <div class="col-lg-6 p-5 p-md-6">
-                        <h4 class="font-secondary mb-4 ls-1 h1">Food Drink Hospitality Photography</h4>
-                        <div class="text-n-right"><h3 class="image-text text-uppercase ms-3 mb-0">Food Drink Hospitality Photography</h3></div>
-                        <h4 class="mt-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-                        <div class="d-flex flex-row align-items-center">
-                            <a href="#" class="button button-large text-white py-3 px-5 text-capitalize ls-0 shadow-sm ms-0 mt-2 me-4" ><i class="bi-camera"></i> About Myself</a>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img class="min-vh-80" src="img/home-slide/2.jpg" alt="Fitness program carousel — flexible healthy eating">
 
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img class="min-vh-80" src="img/home-slide/3.jpg" alt="Fitness program carousel — transformation results">
 
-                        </div>
-                    </div>
-                </div>
-
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-        </section>
+    </section>
 
 
     <section id="content">
@@ -146,7 +111,7 @@
 
 
         <!-- PORTFOLIO -->
-        <section id="bv-portfolio">
+        <section id="gallery">
           <div class="container">
             <div class="text-center">
               <span class="bv-section-tag text-uppercase">What We Do</span>
@@ -217,7 +182,7 @@
         </section>
 
         <!-- SERVICES -->
-        <section id="bv-services" style="background: radial-gradient(circle,rgba(212, 119, 26, 1) 28%, rgba(114, 56, 4, 1) 87%);">
+        <section id="services" style="background: radial-gradient(circle,rgba(212, 119, 26, 1) 28%, rgba(114, 56, 4, 1) 87%);">
           <div class="container">
             <div class="text-center">
               <span class="bv-section-tag text-uppercase text-white">What We Create</span>
@@ -251,7 +216,7 @@
 
 
 
-        <section id="bv-testimonials">
+        <section id="reviews">
           <div class="container">
             <div class="text-center">
               <span class="bv-section-tag text-uppercase">Reviews</span>
@@ -301,7 +266,7 @@
 
 
         <!-- STUDIO AND CONSULTATIONS -->
-        <section id="bv-studio">
+        <section id="about">
           <div class="container">
             <div class="bv-studio-grid">
               <div class="bv-studio-img" data-animate="fadeInLeft">
@@ -325,7 +290,7 @@
 
 
 
-      <section id="bv-studio">
+      <section id="contact">
         <div class="container">
 
           <div class="row align-items-stretch g-3 gx-lg-6">
