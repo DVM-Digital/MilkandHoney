@@ -40,8 +40,8 @@
               </button>
             </div>
 
-            <div class="header-misc">
-              <a href="#contact" class="bv-cta-btn">Book Consultation</a>
+            <div class="header-misc hide-link">
+              <a href="#contact" class="bv-cta-btn">Book a Session</a>
             </div>
 
             <nav class="primary-menu">
@@ -61,6 +61,10 @@
                 <li class="menu-item"><a class="menu-link" href="#" data-href="#about">
                     <div>About</div>
                   </a></li>
+                <li class="menu-item show-link"><a class="menu-link" href="#" data-href="#contact">
+                    <div>Book Session</div>
+                  </a></li>
+
                 
               </ul>
             </nav>
@@ -80,7 +84,7 @@
           <span class="bv-section-tag text-uppercase">Milk & Honey</span>
           <h3 class="text-stretch display-3 fw-bold position-relative text-uppercase">Food & drink photography</h3>
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#bv-studio" class="bv-cta-btn p-3">Book Consultation</a>
+          <a href="#bv-studio" class="bv-cta-btn p-3">Book a Session</a>
         </div>
 
         <div class="col-md-6 order-md-2 min-vh-40">

@@ -633,3 +633,15 @@ body.stretched { background-color: #efe9e2; }
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+@media (max-width: 767px) {
+  .hide-link {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .show-link {
+    display: none;
+  }
+}
