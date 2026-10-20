@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Milk & Honey Photography</title>
-  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
-  <meta name="author" content="Daniel Moore">
-  <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <link rel="alternate" hreflang="en" href="{{ Request::url(); }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <title>Milk & Honey Food Photography</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <link rel="canonical" href="{{ Request::url(); }}" />
+    <meta name="author" content="Daniel Moore">
+
+    <meta itemprop="name" content="Milk & Honey Food Photography">
+    <meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <meta itemprop="image" content="{{ asset('/img/logo.png') }}">
+
+    <meta property="og:title" content="Milk & Honey Food Photography" />
+    <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ Request::url(); }}" />
+    <meta property="og:image" content="{{ asset('/img/logo.png') }}" />
 
   <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon.jpg') }}">
 
@@ -28,9 +40,9 @@
         <div class="container">
           <div class="header-row">
             <div id="logo">
-              <a href="index.html">
-                <img class="logo-default" src="/img/logo.png" alt="Bloom &amp; Vow">
-                <img class="logo-dark" src="/img/logo.png" alt="Bloom &amp; Vow">
+              <a href="#header">
+                <img class="logo-default" src="{{ asset('/img/logo.png') }}" alt="Milk & Honey Photography">
+                <img class="logo-dark" src="{{ asset('/img/logo.png') }}" alt="Milk & Honey Photography">
               </a>
             </div>
 
@@ -80,14 +92,14 @@
 
       <div class="row align-items-center">
 
-        <div class="col-md-6 p-5">
+        <div class="col-md-6 order-md-2 p-5">
           <span class="bv-section-tag text-uppercase">Milk & Honey</span>
           <h3 class="text-stretch display-3 fw-bold position-relative text-uppercase">Food & drink photography</h3>
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a href="#bv-studio" class="bv-cta-btn p-3">Book a Session</a>
         </div>
 
-        <div class="col-md-6 order-md-2 min-vh-40">
+        <div class="col-md-6 order-md-1 min-vh-40">
           <div id="bs-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="1000">
