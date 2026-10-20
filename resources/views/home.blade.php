@@ -420,7 +420,7 @@
         <div class="container text-center text-contrast-700">
           <div class="row justify-content-between align-items-center">
             <div class="col-12 col-md text-center text-md-start text-white">
-              Copyrights &copy; 2026 Milk & Honey Photography
+              Copyrights &copy; {{ now()->year }} Milk & Honey Photography
             </div>
             <div class="col-12 col-md-auto text-center text-md-end mt-2 mt-md-0 text-white">
               Designed and Build by <a href="https://digital-soda.co.uk" target="new">Digital Soda</a>
@@ -439,7 +439,6 @@
 
   <script>
     (function() {
-      // Portfolio tab filter — visual only (decorative demo)
       var tabs = document.querySelectorAll('.bv-tab-btn');
       tabs.forEach(function(btn) {
         btn.addEventListener('click', function() {
@@ -450,7 +449,6 @@
         });
       });
     })();
-
   </script>
 
 </body>
