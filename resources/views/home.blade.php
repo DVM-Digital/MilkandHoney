@@ -329,7 +329,7 @@
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
 
-                    <a href="https://www.instagram.com/milkhoneyimages" target="new" class="social-icon border-transparent bg-white h-bg-instagram" title="Delicious">
+                    <a href="https://www.instagram.com/milkhoneyimages" target="new" class="social-icon border-transparent bg-white h-bg-facebook" title="Instagram">
                         <i class="fa-brands fa-linkedin"></i>
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
