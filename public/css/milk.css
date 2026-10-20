@@ -645,3 +645,7 @@ body.stretched { background-color: #efe9e2; }
     display: none;
   }
 }
+
+.text-left {
+  text-align: left;
+}

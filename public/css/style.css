@@ -32565,6 +32565,8 @@ form .form-group {
 label {
   margin-bottom: var(--cnvs-input-label-mb);
   font-weight: var(--cnvs-form-label-font-weight);
+  font-family: myriad-pro, serif;
+  font-size: 1.1rem;
 }
 label.label-muted {
   color: rgba(13, 110, 253, 0.25);

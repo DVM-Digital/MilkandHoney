@@ -336,49 +336,66 @@
 
             </div>
             <div class="col-lg-6">
-              <div class="card bg-contrast-0 border-0" style="border-radius: 20px;">
+              <div class="card bv-service-card p-0 border-0 text-left" style="border-radius: 20px;">
                 <div class="card-body p-5">
+                  @if(session('success'))
+                    <div id="success">
+                      <h2 class="display-5">Thank you for contacting Milk & Honey</h2>
+                      <p class="text-center">Your request has been received and we will be in touch with you shortly</p>
+                    </div>
+                  @else
+                    <div id="form" class="form-widget">
 
-                  <div class="form-widget">
+                      <form class="contact-form mb-0" action="/contact-form" method="post">
+                        {{ csrf_field() }}
 
-                    <div class="form-result"></div>
+                        <div class="row">
 
-                    <form class="mb-0" id="template-contactform" name="template-contactform" action="#" method="post">
+                          <div class="col-12 mb-4">
+                            <label for="template-contactform-name">Full Name <small>*</small></label>
+                            <input type="text" id="name" name="name" value="{{ old('name') }}" placeholder="Your Name" class="form-control required">
+                            @error('name')
+                              <p class="">Please enter your full name</p>
+                            @enderror
+                          </div>
 
-                      <div class="row">
+                          <div class="col-md-6 mb-4">
+                            <label for="template-contactform-email">Email Address <small>*</small></label>
+                            <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Email Address" class="required email form-control">
+                            @error('email')
+                              <p class="">Please enter a valid email</p>
+                            @enderror
+                          </div>
 
-                        <div class="col-12 mb-4">
-                          <label for="template-contactform-email">Email<small>*</small></label>
-                          <input type="email" id="template-contactform-email" name="template-contactform-email" value="" placeholder="noreply@semicolonweb.com" class="required email form-control">
+                          <div class="col-md-6 mb-4">
+                            <label for="template-contactform-phone">Telephone Number <small>*</small></label>
+                            <input type="number" id="phone" name="phone" value="{{ old('phone') }}" placeholder="Phone Number" class="form-control required">
+                            @error('phone')
+                              <p class="">Please enter a valid number</p>
+                            @enderror
+                          </div>
+
+                          <div class="col-12 mb-4">
+                            <label for="contactQuery">Message <small>*</small></label>
+                            <textarea class="form-control required" id="contactQuery" name="contactQuery" placeholder="Write your message here..." rows="5" cols="30">{{ old('contactQuery') }}</textarea>
+                            @error('contactQuery')
+                              <p>Please enter a message</p>
+                            @enderror
+                          </div>
+
+                          <div style="display: none;">
+                                <input type="text" class="form-control" id="mustBeEmpty" name="mustBeEmpty" placeholder="Your Email" value="{{ old('mustBeEmpty') }}">
+                                <label for="mustBeEmpty">Your Email</label>
+                            </div>
+
+                          <div class="col-12">
+                            <button class="bv-cta-btn m-0 w-100 border-0" type="submit" id="submit" name="submit" value="submit">Send a Message</button>
+                          </div>
+
                         </div>
-
-                        <div class="col-md-6 mb-4">
-                          <label for="template-contactform-name">Name<small>*</small></label>
-                          <input type="text" id="template-contactform-name" name="template-contactform-name" value="" placeholder="SemiColonWeb" class="form-control required">
-                        </div>
-
-                        <div class="col-md-6 mb-4">
-                          <label for="template-contactform-phone">Phone<small>*</small></label>
-                          <input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" placeholder="+00 345 35 674" class="form-control required">
-                        </div>
-
-                        <div class="col-12 mb-4">
-                          <label for="template-contactform-message">Message<small>*</small></label>
-                          <textarea class="form-control required" id="template-contactform-message" name="template-contactform-message" placeholder="Write your message here..." rows="5" cols="30"></textarea>
-                        </div>
-
-                        <div class="col-12 mb-4 d-none">
-                          <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="form-control">
-                        </div>
-
-                        <div class="col-12">
-                          <button class="bv-cta-btn m-0 w-100 border-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Submit</button>
-                        </div>
-                      </div>
-
-
-                    </form>
-                  </div>
+                      </form>
+                    </div>
+                  @endif
 
                 </div>
               </div>
@@ -389,11 +406,8 @@
 
     </section>
 
-
-
-
-      </div><!-- .content-wrap -->
-    </section><!-- #content -->
+      </div>
+    </section>
 
 
 
@@ -409,16 +423,16 @@
               Copyrights &copy; 2026 Milk & Honey Photography
             </div>
             <div class="col-12 col-md-auto text-center text-md-end mt-2 mt-md-0 text-white">
-              Designed and Build by Digital Soda
+              Designed and Build by <a href="https://digital-soda.co.uk" target="new">Digital Soda</a>
             </div>
           </div>
         </div>
-      </div><!-- #copyrights end -->
+      </div>
 
     </footer>
 
 
-  </div><!-- #wrapper -->
+  </div>
 
   <script src="js/plugins.min.js"></script>
   <script src="js/functions.bundle.js"></script>
