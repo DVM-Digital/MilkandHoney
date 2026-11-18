@@ -93,10 +93,12 @@
       <div class="row align-items-center">
 
         <div class="col-md-6 order-md-2 p-5">
-          <span class="bv-section-tag text-uppercase">Milk & Honey</span>
+          <img src="{{ asset('/img/logo.png') }}" alt="Milk & Honey Photograpy" />
           <h3 class="text-stretch display-3 fw-bold position-relative text-uppercase">Food & drink photography</h3>
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#bv-studio" class="bv-cta-btn p-3">Book a Session</a>
+          <div class="mt-5">
+            <a href="#bv-studio" class="bv-cta-btn p-3">Book a Session</a>
+          </div>
         </div>
 
         <div class="col-md-6 order-md-1 min-vh-40">
@@ -137,63 +139,9 @@
 
 
 
-            <div class="bv-gallery-grid">
-              <!-- Row 1 -->
-              <div class="bv-gallery-item span2" data-animate="fadeIn" data-delay="100">
-                <img src="{{ asset('img/gallery/3.jpg') }}" alt="New menu shoot for Everything Retreat" fetchpriority="high" loading="eager">
-                <div class="bv-gallery-overlay"><span class="bv-gallery-label">New menu shoot for Everything Retreat</span></div>
-              </div>
-              <div class="bv-gallery-item tall" data-animate="fadeIn" data-delay="150">
-                <img src="{{ asset('img/gallery/1.jpg') }}" alt="Image Text Goes Here" loading="lazy">
-                <div class="bv-gallery-overlay"><span class="bv-gallery-label">Image Text Goes Here</span></div>
-              </div>
-              <!-- Row 2 -->
-              <div class="bv-gallery-item" data-animate="fadeIn" data-delay="300">
-                <img src="{{ asset('img/gallery/8.jpg') }}" alt="Image Text Goes Here" loading="lazy">
-                <div class="bv-gallery-overlay"><span class="bv-gallery-label">Image Text Goes Here</span></div>
-              </div>
-              <div class="bv-gallery-item" data-animate="fadeIn" data-delay="200">
-                <img src="{{ asset('img/gallery/4.jpg') }}" alt="Image Text Goes Here" loading="lazy">
-                <div class="bv-gallery-overlay"><span class="bv-gallery-label">Image Text Goes Here</span></div>
-              </div>
-              <div class="bv-gallery-item" data-animate="fadeIn" data-delay="250">
-                <img src="{{ asset('img/gallery/5.jpg') }}" alt="Image Text Goes Here" loading="lazy">
-                <div class="bv-gallery-overlay"><span class="bv-gallery-label">Image Text Goes Here</span></div>
-              </div>
-              <!-- Row 3 -->
-              <div class="bv-gallery-item tall" data-animate="fadeIn" data-delay="200">
-                <img src="{{ asset('img/gallery/10.jpg') }}" alt="Image Text Goes Here" loading="lazy">
-                <div class="bv-gallery-overlay"><span class="bv-gallery-label">Image Text Goes Here</span></div>
-              </div>
-              <div class="bv-gallery-item span2" data-animate="fadeIn" data-delay="250">
-                <img src="{{ asset('img/gallery/12.jpg') }}" alt="Image Text Goes Here" loading="lazy">
-                <div class="bv-gallery-overlay"><span class="bv-gallery-label">Image Text Goes Here</span></div>
-              </div>
-              <!-- Row 4 -->
-              <div class="bv-gallery-item tall" data-animate="fadeIn" data-delay="200">
-                <img src="{{ asset('img/gallery/6.jpg') }}" alt="Image Text Goes Here" loading="lazy">
-                <div class="bv-gallery-overlay"><span class="bv-gallery-label">Image Text Goes Here</span></div>
-              </div>
-              <div class="bv-gallery-item tall" data-animate="fadeIn" data-delay="200">
-                <img src="{{ asset('img/gallery/14.jpg') }}" alt="Image Text Goes Here" loading="lazy">
-                <div class="bv-gallery-overlay"><span class="bv-gallery-label">Image Text Goes Here</span></div>
-              </div>
-              <div class="bv-gallery-item tall" data-animate="fadeIn" data-delay="200">
-                <img src="{{ asset('img/gallery/13.jpg') }}" alt="Image Text Goes Here" loading="lazy">
-                <div class="bv-gallery-overlay"><span class="bv-gallery-label">Image Text Goes Here</span></div>
-              </div>
-
-              <!-- Row 4 -->
-              <div class="bv-gallery-item span2" data-animate="fadeIn" data-delay="200">
-                <img src="{{ asset('img/gallery/17.jpeg') }}" alt="Image Text Goes Here" loading="lazy">
-                <div class="bv-gallery-overlay"><span class="bv-gallery-label">Image Text Goes Here</span></div>
-              </div>
-              <div class="bv-gallery-item tall" data-animate="fadeIn" data-delay="200">
-                <img src="{{ asset('img/gallery/19.jpeg') }}" alt="Front Cover for Lancashire Life June 2026 Edition" loading="lazy">
-                <div class="bv-gallery-overlay"><span class="bv-gallery-label">Front Cover for Lancashire Life June 2026 Edition</span></div>
-              </div>
-
-            </div>
+            <!-- Elfsight Instagram Feed | Milk & Honey -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-4918dc7f-4bda-437d-8baf-f5d06f9b2536" data-elfsight-app-lazy></div>
           </div>
         </section>
 
@@ -209,17 +157,22 @@
             <div class="bv-services-grid">
               <div class="bv-service-card" data-animate="fadeInUp" data-delay="100">
                 <span class="bv-service-icon"><i class="bi-camera"></i></span>
-                <h3>Option 1</h3>
+                <h3 class="text-uppercase">Hourly</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
               </div>
               <div class="bv-service-card" data-animate="fadeInUp" data-delay="150">
                 <span class="bv-service-icon"><i class="bi-camera"></i></span>
-                <h3>Option 2</h3>
+                <h3 class="text-uppercase">Half Day</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
               </div>
               <div class="bv-service-card" data-animate="fadeInUp" data-delay="200">
                 <span class="bv-service-icon"><i class="bi-camera"></i></span>
-                <h3>Option 3</h3>
+                <h3 class="text-uppercase">Full Day</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              </div>
+              <div class="bv-service-card" data-animate="fadeInUp" data-delay="250">
+                <span class="bv-service-icon"><i class="bi-camera"></i></span>
+                <h3 class="text-uppercase">Retainer</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
               </div>
 
@@ -259,8 +212,8 @@
                   <div class="bv-testi-stars">
                     <i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i>
                   </div>
-                  <p class="bv-testi-text">"Working with Karen has been an absolute pleasure! Her professionalism and attention to detail were evident from the start, and the stunning results of her photography speak for themselves. <br />She truly brought my products to life, capturing them in a way that not only highlights their quality but also helps boost sales. I couldn’t be happier with how her photos are presenting my creations at their very best!"</p>
-                  <span class="bv-testi-couple">Arianna Anselmi - Aria's Cakes</span>
+                  <p class="bv-testi-text">"Karen is such a professional and so easy to work with. The photographs she creates are absolutely beautiful and exactly what we had hoped for."</p>
+                  <span class="bv-testi-couple">Nicola Nuttall - Giddy Kippers</span>
                 </div>
               </div>
               <div class="bv-testi-card" data-animate="fadeInUp" data-delay="300">
@@ -271,8 +224,8 @@
                   <div class="bv-testi-stars">
                     <i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i>
                   </div>
-                  <p class="bv-testi-text">"Working with Karen has been an absolute pleasure! Her professionalism and attention to detail were evident from the start, and the stunning results of her photography speak for themselves. <br />She truly brought my products to life, capturing them in a way that not only highlights their quality but also helps boost sales. I couldn’t be happier with how her photos are presenting my creations at their very best!"</p>
-                  <span class="bv-testi-couple">Arianna Anselmi - Aria's Cakes</span>
+                  <p class="bv-testi-text">"Karen is not only a joy to work with, but the standard of the work she delivers is exceptional. She is such a perfectionist and the quality shows. I constantly get comments about the pictures of my food which she has taken as they bring the dishes to life. I would happily recommend Karen and endorse her superb skills, and impeccable professionalism."</p>
+                  <span class="bv-testi-couple">Juliana Wilson</span>
                 </div>
               </div>
             </div>
@@ -290,7 +243,7 @@
               </div>
               <div data-animate="fadeInRight">
                 <span class="bv-section-tag text-uppercase">Who Am I?</span>
-                <h2 class="bv-section-title">Karen Clarke</h2>
+                <h2 class="bv-section-title">Karen Clark</h2>
                 <p>I'm Karen, the photographer behind Milk & Honey Food Photography, specialising in food, hospitality and brand photography for restaurants, pubs, hotels, chefs, producers and food & drink businesses.</p>
 
                 <p>I create imagery designed to do more than simply look beautiful. It needs to work. From a new seasonal menu or restaurant launch to social content, packaging, advertising and a complete image library, I work with businesses to create photography they can use across their marketing.</p>
